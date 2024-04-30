@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_hsc11235_test_app_1714514131739-pr-trigger-input-set
+  identifier: Build_hsc11235_test_app_1714514131739prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_hsc11235_test_app_1714514131739
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
