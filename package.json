@@ -1,47 +1,47 @@
 {
-  "name": "test-app",
-  "version": "1.0.0",
-  "main": "dist/index.js",
-  "scripts": {
-    "format": "prettier --write \"**/*.{ts,js,json,yml}\"",
-    "lint": "eslint .",
-    "test": "jest",
-    "build": "tsc -p .",
-    "start": "node dist/index.js",
-    "dev": "nodemon src/index.ts",
-    "migrate": "node scripts/migrate.js"
-  },
-  "type": "module",
-  "author": "",
-  "license": "ISC",
-  "nodemonConfig": {
-    "ext": "ts,js,json,yml",
-    "verbose": true,
-    "exec": "npm run format && npm run lint && node --inspect=0.0.0.0:9229 --loader ts-node/esm --nolazy -r ts-node/register",
-    "legacyWatch": true
-  },
-  "dependencies": {
-    "ajv": "^8.12.0",
-    "@fastify/postgres": "^5.2.2",
-    "@fastify/swagger": "^8.14.0",
-    "@fastify/swagger-ui": "^3.0.0",
-    "fastify": "^4.26.2",
-    "pg": "^8.11.5",
-    "postgrator": "^7.2.0"
-  },
-  "devDependencies": {
-    "@types/jest": "^29.5.12",
-    "@types/node": "^20.12.7",
-    "@types/pg": "^8.11.5",
-    "concurrently": "^8.2.2",
-    "eslint": "^8.57.0",
-    "jest": "^29.7.0",
-    "nodemon": "^3.1.0",
-    "prettier": "^3.2.5",
-    "ts-jest": "^29.1.2",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.4.5",
-    "typescript-eslint": "^7.7.1"
-  },
-  "description": ""
+    "name": "test-app",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "scripts": {
+        "format": "prettier --write \"**/*.{ts,js,json,yml}\"",
+        "lint": "eslint .",
+        "test": "jest",
+        "build": "tsc -p .",
+        "start": "node dist/index.js",
+        "dev": "nodemon src/index.ts",
+        "migrate": "node scripts/migrate.js"
+    },
+    "type": "module",
+    "author": "",
+    "license": "ISC",
+    "nodemonConfig": {
+        "ext": "ts,js,json,yml",
+        "verbose": true,
+        "exec": "npm run format && npm run lint && node --inspect=0.0.0.0:9229 --loader ts-node/esm --nolazy -r ts-node/register",
+        "legacyWatch": true
+    },
+    "dependencies": {
+        "ajv": "^8.12.0",
+        "@fastify/postgres": "^5.2.2",
+        "@fastify/swagger": "^8.14.0",
+        "@fastify/swagger-ui": "^3.0.0",
+        "fastify": "^4.26.2",
+        "pg": "^8.11.5",
+        "postgrator": "^7.2.0"
+    },
+    "devDependencies": {
+        "@types/jest": "^29.5.12",
+        "@types/node": "^20.12.7",
+        "@types/pg": "^8.11.5",
+        "concurrently": "^8.2.2",
+        "eslint": "^8.57.0",
+        "jest": "^29.7.0",
+        "nodemon": "^3.1.0",
+        "prettier": "^3.2.5",
+        "ts-jest": "^29.1.2",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.4.5",
+        "typescript-eslint": "^7.7.1"
+    },
+    "description": ""
 }
